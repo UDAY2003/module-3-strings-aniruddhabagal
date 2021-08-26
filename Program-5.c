@@ -14,11 +14,11 @@ int main()
   char s[1000];
 
   printf("Input a string: ");
-  scanf("%s",s);
+  scanf("%s",&s);
   while (s[c] != '\0') {       
-    if(s[c]=='a'||s[c]=='A'||s[c]=='e'||s[c]=='E'||s[c]=='i'||s[c]=='I'||s[c]=='O'||s[c]=='U'||s[c]=='o'||s[c]=='u'){
+    if(s[c]=='a'||s[c]=='A'||s[c]=='e'||s[c]=='E'||s[c]=='i'||s[c]=='I'||s[c]=='O'||s[c]=='U'||s[c]=='o'||s[c]=='u')
       count++;
-    }   
+       
     c++;          //place logic to find the vowel
   }
 
