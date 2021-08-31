@@ -9,9 +9,7 @@
 //Enter the first string: Nithin
 //Enter the second string:  kumar
 //The concatenated  string = Nithinkumar
-
 #include <stdio.h>
-#include<string.h>
 int main() {
 	char a[20], b[20], c[20];
 	int i, j;
@@ -19,16 +17,22 @@ int main() {
 	scanf("%s", a);
 	printf("Enter the second string : ");
 	scanf("%s", b);
-	for (i=0;i<strlen(a);i++)             // Complete the code in for
-           { 
-		c[i] =a[i] ;                                              //Complete the statement
+	for (i=0; ;i++ )                                                 
+         { 
+		if (a[i]=='\0')
+		   break;
+		c[i]=a[i] ;
 	}
-	for (j=0;j<strlen(b);j++ )                                                 // Complete the code in for
-           { 
-		c[i] = b[j];                                              //Complete the statement
+	for (j=0; ;j++)  
+        {    
+           
+		if (b[j]=='\0')
+		   break;
+		c[i]=b[j] ;
 		i++;
 	}
-	c[i]= b[j];                                               //Complete the statement
+	c[i]='\0' ; 
+	
 	printf("The concatenated string = %s", c);
 	return 0;
 }
